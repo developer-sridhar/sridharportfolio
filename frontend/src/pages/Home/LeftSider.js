@@ -24,7 +24,7 @@ const LeftSider = () => {
           <a href={`mailto:${emailAddress}`}>
             <i className="ri-mail-line text-gray-400 text-xl hover:text-[#4285F4]"></i>
           </a>
-          <a href="https://www.instagram.com/_sridhar_developer_/">
+          <a href="https://www.instagram.com/_sridhar_official_/">
             <i className="ri-instagram-fill text-gray-400 text-xl"></i>
           </a>
           <a href="https://www.facebook.com/developer-sridhar">
