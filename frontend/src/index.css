@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Montserrat", sans-serif;
+}
+
+.header h1{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #0A192F;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #013f3c7f; 
+  border-radius: 10px;
+}
+
+.glassmorphism-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.glassmorphism-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes tricolour-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hover:animate-tricolour-animation {
+  background: linear-gradient(90deg, #ff7f50, #ffcc00, #00ff7f);
+  background-size: 200% 200%;
+  animation: tricolour-animation 3s ease infinite;
+}
